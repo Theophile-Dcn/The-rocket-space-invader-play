@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Vina Sans', sans-serif;
+}
+
+h1{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight:bold;
+    letter-spacing: 4px;
+    color: #FBC048;;
+    
+}
+
+.fusee {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 270px;
+    height: 450px;
+    transform: rotate(60deg);
+    transition: transform 2s ease; 
+    
+}
+.move-rocket-animation {
+    transform: translate(700%, -200%) rotate(60deg); /* Utilisez les valeurs de translate pour déplacer la fusée */
+}
+
+.container-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+}
+
+
+.configuration{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 8rem;
+    background-color: rgba(0, 0, 0, 0.397);
+}
+
+#gridSize , #pixelSize, #button{
+    text-align: center;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.2em;
+    
+    
+}
+
+#gridSize{
+    border-radius: 10px 0 0 10px;
+    border-right: none;
+}
+
+#button{
+    color: #FBC048;
+    background: #9B68E4;
+    border-radius: 0 10px 10px 0;
+    letter-spacing: 2px;
+}
+
+.containerGrid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.cell{
+    background-color: #d2dae2;
+    border: 3px #808E9B solid;
+    width: 50px;
+    height: 50px;
+}
+
+.black {
+    background-color: black;
+}
+
+
+
+.colorDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: rgba(0, 0, 0, 0.247);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transform: translate(0, -100%);
+}
+
+.button-color{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: 0 1rem;
+}
+
+.is-active {
+    /* styles pour le premier bouton quand il est actif */
+    border: 2px solid;
+}
+div > button:nth-child(1) {
+    /* styles pour le premier bouton */
+    background-color: #D2DAE2;
+    border-color: #85888b;
+}
+
+
+div > button:nth-child(2) {
+    /* styles pour le deuxième bouton */
+    background-color: #485460;
+    border-color: #61758a;
+}
+
+div > button:nth-child(3) {
+    /* styles pour le troisième bouton */
+    background-color: #FBC048;
+    border-color: #faa200;
+}
+
+div > button:nth-child(4) {
+    /* styles pour le quatrième bouton */
+    background-color :#79EA83;
+    border-color: #29da38;
+}
+
+
+.plain { background-color: #D2DAE2 }
+.empty { background-color: #485460 }
+.light { background-color: #FBC048 }
+.highlight { background-color: #79EA83}
+
+
